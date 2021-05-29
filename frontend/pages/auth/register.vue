@@ -4,7 +4,7 @@
 	     <div class="col d-flex justify-content-center">
 	       <b-card
 		      style="width: 30rem;"
-		      class="mb-2"
+		      class="mb-2 mt-5"
 		    >
 	    <b-card-text>
 	      <h3 class="text-center"> Register </h3>
@@ -62,6 +62,8 @@
 	      <button @click="register()" class="btn btn-block btn-success">
 	        Create
 	      </button>
+	      <hr />
+	      <NuxtLink to="/auth/login/" > Already Have An Account? login Here </NuxtLink>
 	    </b-card-text>
 
 	  </b-card>

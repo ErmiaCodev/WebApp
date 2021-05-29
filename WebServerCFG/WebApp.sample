@@ -1,0 +1,22 @@
+server {
+    listen 80;
+    server_name 10.0.2.15;
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location /static/ {
+        alias /home/ermia/WebApp/static/;
+    }
+    location /media/ {
+        alias /home/ermia/WebApp/media/;
+    }
+
+    location /api/ {
+        include proxy_params;
+        proxy_pass http://127.0.0.1:8000;
+    }
+
+    location / {
+        include proxy_params;
+        proxy_pass http://127.0.0.1:3000;
+    }
+}
