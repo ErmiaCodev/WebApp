@@ -1,3 +1,47 @@
+from django.views.decorators.csrf import csrf_exempt
+from django.contrib.auth.hashers import check_password
+from django.contrib.auth.models import User
+from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render
-
+from django.http import *
+from .models import *
+import json, random, string
 # Create your views here.
+
+def randASCII(n):
+	plain = ''
+
+	for i in range(n):
+		plain += random.choice(string.ascii_uppercase + string.digits)
+
+	return plain
+
+@csrf_exempt
+def login(request):
+	username = json.loads(request.body).get('username')
+	password = json.loads(request.body).get('pass')
+
+	this_user = User.objects.get(username=str(username))
+
+	if check_password(password, str(this_user.password)):
+		token = Token.objects.get(username=username).token
+		return JsonResponse({'token': str(token), 'status': 200})
+	else:
+		return JsonResponse({'status': 500})
+
+@csrf_exempt
+def register(request):
+	username = json.loads(request.body).get('username')
+	password1 = json.loads(request.body).get('pass1')
+	password2 = json.loads(request.body).get('pass2')
+
+	# TODO: Add Security Feauture as Password length and ..
+
+	if username and password1 == password2:
+		u = User(username=username)
+		u.set_password(password2)
+		u.save()
+		token = Token(username=username, token=randASCII(200)).save()
+		return JsonResponse({"status": 200})
+	else:
+		return JsonResponse({'status': 500})

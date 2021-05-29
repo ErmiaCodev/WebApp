@@ -1,5 +1,7 @@
 from django.urls import path
-
+from .views import * 
 urlpatterns = [
-	# Null
+	path('login/', login),
+	path('register/', register),
+
 ]
