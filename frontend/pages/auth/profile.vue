@@ -16,7 +16,14 @@
 </template>
 
 <script>
-	export default {
+import axios from 'axios'
 
+	export default {
+		mounted() {
+			if (process.browser) {
+				var token = localStorage.getItem('token') 
+			}
+			
+		}
 	};
 </script>
