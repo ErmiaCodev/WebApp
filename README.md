@@ -14,7 +14,7 @@ It include CMS(For Making Blog),\
 ##### For The First We Just Make Demo Design But After Confirm We Start Making Feature Like Auth System And CMS!!
 
 ### TODO: 
-- [] Multi Material Layouts
-~ [ ] CMS System
-~ [] Authentication system(Security Feautures)
-- [] Mail System(Support, Contact)
+- [ ] Multi Material Layouts
+- [ ] CMS System
+- [ ] Authentication system(Security Feautures)
+- [ ] Mail System(Support, Contact)
