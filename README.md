@@ -16,5 +16,5 @@ It include CMS(For Making Blog),\
 ### TODO: 
 - [ ] Multi Material Layouts
 - [ ] CMS System
-- [X] Authentication system(Security Feautures)
+- [x] Authentication system(Security Feautures)
 - [ ] Mail System(Support, Contact)
