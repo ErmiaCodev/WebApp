@@ -96,7 +96,7 @@ import axios from 'axios'
 						pass1: this.pass1,
 						pass2: this.pass2,
 					})
-					.then(response => this.status = response.data.status)
+					.then(response => {this.status = response.data.status, this.$router.push("/auth/login")})
 			}
 		}
 	};

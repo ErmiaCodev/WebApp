@@ -105,7 +105,7 @@ export default {
         username: this.username,
         pass: this.pass
       })
-      .then(response => {this.status = validate(response.data)})
+      .then(response => {this.status = validate(response.data), this.$router.push("/auth/profile");})
     },
     refresh() {
       this.$nuxt.refresh()
