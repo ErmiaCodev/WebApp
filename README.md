@@ -1,4 +1,4 @@
-# X-Army
+# WebApp
 
 ### It's A PowerFull Full Stack WebApp
 
@@ -16,5 +16,5 @@ It include CMS(For Making Blog),\
 ### TODO: 
 - [ ] Multi Material Layouts
 - [ ] CMS System
-- [ ] Authentication system(Security Feautures)
+- [X] Authentication system(Security Feautures)
 - [ ] Mail System(Support, Contact)
