@@ -43,6 +43,25 @@ def register(request):
 		u.set_password(password2)
 		u.save()
 		token = Token(username=username, token=randASCII(200)).save()
+		prof = Profile(username=username, name='', lastname='', email='', avatar='def').save()
+
 		return JsonResponse({"status": 200})
 	else:
 		return JsonResponse({'status': 500})
+
+
+@csrf_exempt
+def getuser(request):
+	token = json.loads(request.body).get('token')
+	username = Token.objects.get(token=token).username
+	user = Profile.objects.get(username=username)
+
+	context = {
+		'username': user.username,
+		'name': user.name,
+		'lname': user.lastname,
+		'email': user.email,
+		'avatar': user.avatar
+	}
+
+	return JsonResponse({'ID': context})

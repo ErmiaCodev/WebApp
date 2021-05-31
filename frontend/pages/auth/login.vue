@@ -59,7 +59,7 @@
         Login
       </button>
       <hr />
-      <NuxtLink to="/auth/register/" > No Account ? Register Here </NuxtLink>
+      <NuxtLink to="/auth/register/" > <p class="text-info"> No Account ? Register Here </p> </NuxtLink>
     </b-card-text>
 
   </b-card>

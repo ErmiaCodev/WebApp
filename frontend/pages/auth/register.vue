@@ -63,7 +63,7 @@
 	        Create
 	      </button>
 	      <hr />
-	      <NuxtLink to="/auth/login/" > Already Have An Account? login Here </NuxtLink>
+	      <NuxtLink to="/auth/login/" > <p class="text-info"> Already Have An Account? login Here </p> </NuxtLink>
 	    </b-card-text>
 
 	  </b-card>

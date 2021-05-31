@@ -8,9 +8,29 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-item href="#">Home</b-nav-item>
-        <b-nav-item href="#">Blog</b-nav-item>
-        <b-nav-item href="#">Messages</b-nav-item>
+          <NuxtLink to="/">
+            <div class="nav-item">
+              <div class="nav-link">
+                Home
+              </div>
+            </div>
+          </NuxtLink>
+        
+          <NuxtLink to="/blog">
+            <div class="nav-item">
+              <div class="nav-link">
+                blog
+              </div>
+            </div>
+          </NuxtLink>
+
+          <NuxtLink to="/message">
+            <div class="nav-item">
+              <div class="nav-link">
+                message
+              </div>
+            </div>
+          </NuxtLink>
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
@@ -21,8 +41,16 @@
           <template #button-content>
             <em>Authentication</em>
           </template>
-          <b-dropdown-item href="#">Profile</b-dropdown-item>
-          <b-dropdown-item href="#">Sign Out</b-dropdown-item>
+          <NuxtLink to="/auth/login">
+            <div class="dropdown-item">Log!</div>
+          </NuxtLink>
+          <hr>
+          <NuxtLink to="/auth/profile">
+            <div class="dropdown-item">Profile</div>
+          </NuxtLink>
+          <NuxtLink to="/auth/logout">
+            <div class="dropdown-item">logout</div>
+          </NuxtLink>
         </b-nav-item-dropdown>
       </b-navbar-nav>
     </b-collapse>
