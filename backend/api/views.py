@@ -20,14 +20,15 @@ def randASCII(n):
 def login(request):
 	username = json.loads(request.body).get('username')
 	password = json.loads(request.body).get('pass')
-
-	this_user = User.objects.get(username=str(username))
-
-	if check_password(password, str(this_user.password)):
-		token = Token.objects.get(username=username).token
-		return JsonResponse({'token': str(token), 'status': 200})
-	else:
-		return JsonResponse({'status': 500})
+	try:
+		this_user = User.objects.get(username=str(username))
+		if check_password(password, str(this_user.password)):
+			token = Token.objects.get(username=username).token
+			return JsonResponse({'token': str(token), 'status': 200})
+		else:
+			return JsonResponse({'status': 500})
+	except:
+		return JsonResponse({'status': 502})
 
 @csrf_exempt
 def register(request):

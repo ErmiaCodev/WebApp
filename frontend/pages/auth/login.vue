@@ -3,9 +3,9 @@
    <div class="row">
      <div class="col d-flex justify-content-center">
        <b-card
-      style="width: 30rem;"
-      class="mb-2 mt-5"
-    >
+        style="width: 30rem;"
+        class="mb-2 mt-5"
+      >
     <b-card-text>
       <h3 class="text-center"> Login </h3>
       <hr>
@@ -16,6 +16,15 @@
               <hr>
               <p class="mb-0">
                 Make Sure Username & PassWord. is correct
+              </p>
+            </b-alert>
+        </div>
+        <div v-if="status == 502">
+           <b-alert show variant="warning">
+              <h5 class="alert-heading">Warn</h5>
+              <hr>
+              <p class="mb-0">
+                Not Valid User Or Empty Field!
               </p>
             </b-alert>
         </div>
@@ -73,6 +82,8 @@ function validate(data) {
  if (data.status == 200) {
   localStorage.setItem("token", data.token)
   return 200
+ } else if (data.status == 502) {
+  return 502
  } else {
   return 500
  }

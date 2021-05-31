@@ -4,7 +4,7 @@
 	     <div class="col d-flex justify-content-center">
 	       <b-card
 		      style="width: 30rem;"
-		      class="mb-2 mt-5"
+		      class="mb-2 mt-3"
 		    >
 	    <b-card-text>
 	      <h3 class="text-center"> Register </h3>
