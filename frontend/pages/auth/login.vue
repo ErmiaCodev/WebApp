@@ -11,7 +11,7 @@
       <hr>
       <div v-if="status">
         <div v-if="status == 200">
-          {{this.$router.push("/auth/profile")}}
+          {{ this.$router.push("/auth/profile") }}
         </div>
         <div v-if="status == 500">
            <b-alert show variant="danger">

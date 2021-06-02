@@ -45,10 +45,11 @@
                     <br>
                 <div class="row mb-3">
                     <div class="col-sm-12">
-                        <button class="btn btn-block btn-danger">
-                            logout
-                        </button>
-                        
+                    	<NuxtLink to="/auth/logout">
+                    		<button class="btn btn-block btn-danger">
+	                            logout
+	                        </button>
+                    	</NuxtLink>
                     </div>
                 </div>
     			</div>
@@ -73,16 +74,20 @@ import axios from 'axios'
 				}
 			}
 		},
-		mounted() {
+		created() {
 			if (process.browser) {
-				var token = localStorage.getItem('token') 
+				var token = localStorage.getItem('token');
+				if (token != null) {
+					axios
+					.post('/api/getuser/', {
+						token: token
+					})
+					.then(response => this.id = response.data.ID)
+				} else {
+					this.$router.push("/auth/login")
+				}
+				
 			}
-			axios
-				.post('/api/getuser/', {
-					token: token
-				})
-				.then(response => this.id = response.data.ID)
-
 		}
 	};
 </script>

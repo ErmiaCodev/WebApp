@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-  <b-navbar toggleable="lg" type="dark" variant="info">
+  <b-navbar toggleable="lg" type="dark" style="background-color: #0C4B33">
     <b-navbar-brand href="#">GeekyChunk</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -62,6 +62,6 @@
 
 <style>
 body {
-  background-color: #e3e3e3;
+  background-color: #42b983;
 }
 </style>
