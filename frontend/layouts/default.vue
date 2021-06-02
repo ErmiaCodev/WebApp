@@ -62,6 +62,6 @@
 
 <style>
 body {
-  background-color: #42b983;
+  background-color: #e3e3e3;
 }
 </style>

@@ -65,3 +65,25 @@ def getuser(request):
 	}
 
 	return JsonResponse({'ID': context})
+
+@csrf_exempt
+def getposts(request):
+	data = list(Post.objects.all().order_by('-publish').values())
+	context = {
+		'posts': data
+	}
+
+	return JsonResponse(context)
+
+def post(request, slug):
+	data = Post.objects.get(slug=slug)
+	context= {
+		'post': {
+			'title': data.title,
+			'thumbnail': data.thumbnail.url,
+			'description': data.description,
+			'body': data.body
+		}
+	}
+
+	return JsonResponse(context)
