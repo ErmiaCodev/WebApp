@@ -10,6 +10,9 @@
       <h3 class="text-center"> Login </h3>
       <hr>
       <div v-if="status">
+        <div v-if="status == 200">
+          {{this.$router.push("/auth/profile")}}
+        </div>
         <div v-if="status == 500">
            <b-alert show variant="danger">
               <h5 class="alert-heading">Worng</h5>
@@ -81,6 +84,7 @@ import axios from 'axios'
 function validate(data) {
  if (data.status == 200) {
   localStorage.setItem("token", data.token)
+
   return 200
  } else if (data.status == 502) {
   return 502
@@ -105,10 +109,7 @@ export default {
         username: this.username,
         pass: this.pass
       })
-      .then(response => {this.status = validate(response.data), this.$router.push("/auth/profile");})
-    },
-    refresh() {
-      this.$nuxt.refresh()
+      .then(response => {this.status = validate(response.data), n = response.data.status})
     }
   },
   created() {

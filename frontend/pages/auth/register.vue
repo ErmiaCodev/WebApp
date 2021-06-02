@@ -6,10 +6,13 @@
 		      style="width: 30rem;"
 		      class="mb-2 mt-3"
 		    >
-	    <b-card-text>
+	    	<b-card-text>
 	      <h3 class="text-center"> Register </h3>
 	      <hr>
 	      <div v-if="status">
+	      	<div v-if="status == 200">
+	      		{{this.$router.push("/auth/login")}}
+	        </div>
 	        <div v-if="status == 500">
 	           <b-alert show variant="danger">
 	              <h5 class="alert-heading">Worng</h5>
@@ -96,7 +99,7 @@ import axios from 'axios'
 						pass1: this.pass1,
 						pass2: this.pass2,
 					})
-					.then(response => {this.status = response.data.status, this.$router.push("/auth/login")})
+					.then(response => {this.status = response.data.status})
 			}
 		}
 	};
