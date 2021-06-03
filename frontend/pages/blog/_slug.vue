@@ -6,7 +6,7 @@
 			<div class="">
 				<img :src="post.thumbnail" alt="test" style="width: 100%" class="img-thumbnail img-responsive">
 				<h2 class="text-center mt-3 font-weight-bold"> {{post.title}} </h2>
-				<h5 class="text-center text-muted mt-5 mb-5"> {{post.description}} </h5>
+				
 				<hr class="badge-light">
 				<div class="text-left">
 					{{post.body}}

@@ -3,7 +3,7 @@
 		<div class="container">
 			<h1 class="text-center"> Blog </h1>
 
-			<div style="padding: 0 10rem 0 10rem">
+			<div>
 				<br>
 
 				<div v-for="post in posts">

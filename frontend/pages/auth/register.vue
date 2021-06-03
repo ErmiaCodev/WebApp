@@ -10,7 +10,23 @@
 	      <h3 class="text-center"> Register </h3>
 	      <hr>
 	      <div v-if="status">
+	      	<div v-if="status == 502">
+	      		<b-alert show variant="warning">
+	              <h5 class="alert-heading">Not Availed</h5>
+	              <hr>
+	              <p class="mb-0">
+	                User Exist
+	              </p>
+	            </b-alert>
+	        </div>
 	      	<div v-if="status == 200">
+	      		<b-alert show variant="success">
+	              <h5 class="alert-heading">Created</h5>
+	              <hr>
+	              <p class="mb-0">
+	                Redirecting To Login Page
+	              </p>
+	            </b-alert>
 	      		{{this.$router.push("/auth/login")}}
 	        </div>
 	        <div v-if="status == 500">

@@ -37,17 +37,20 @@ def register(request):
 	password2 = json.loads(request.body).get('pass2')
 
 	# TODO: Add Security Feauture as Password length and ..
+	try:
+		User.objects.get(username=username)
+		return JsonResponse({'status': 502})
+	except:
+		if username and password1 == password2:
+			u = User(username=username)
+			u.set_password(password2)
+			u.save()
+			token = Token(username=username, token=randASCII(200)).save()
+			prof = Profile(username=username, name='', lastname='', email='', avatar='def').save()
 
-	if username and password1 == password2:
-		u = User(username=username)
-		u.set_password(password2)
-		u.save()
-		token = Token(username=username, token=randASCII(200)).save()
-		prof = Profile(username=username, name='', lastname='', email='', avatar='def').save()
-
-		return JsonResponse({"status": 200})
-	else:
-		return JsonResponse({'status': 500})
+			return JsonResponse({"status": 200})
+		else:
+			return JsonResponse({'status': 500})
 
 
 @csrf_exempt
