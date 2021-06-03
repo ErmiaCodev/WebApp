@@ -3,7 +3,7 @@
 		<div class="text-center mt-0 pb-2">
           
             
-			<div class="">
+			<div>
 				<img :src="post.thumbnail" alt="test" style="width: 100%" class="img-thumbnail img-responsive">
 				<h2 class="text-center mt-3 font-weight-bold"> {{post.title}} </h2>
 				
