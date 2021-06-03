@@ -42,7 +42,7 @@
             <em>Authentication</em>
           </template>
           <NuxtLink to="/auth/login">
-            <div class="dropdown-item">Log!</div>
+            <div class="dropdown-item">Log</div>
           </NuxtLink>
           <hr>
           <NuxtLink to="/auth/profile">
