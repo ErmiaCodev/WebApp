@@ -78,8 +78,7 @@ import axios from 'axios'
 			if (process.browser) {
 				var token = localStorage.getItem('token');
 				if (token != null) {
-					axios
-					.post('/api/getuser/', {
+					axios.post('/api/getuser/', {
 						token: token
 					})
 					.then(response => this.id = response.data.ID)
