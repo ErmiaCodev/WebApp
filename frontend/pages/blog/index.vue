@@ -5,7 +5,7 @@
 		    <div class="row h-100 align-items-center">
 		      <div class="col-12 text-center">
 		        <h1 class="title font-weight-light text-white mb-2"> Geeky Blog </h1>
-		        <h5 class="text-white"> <NuxtLink to="/blog/cat"> <span class="text-white"> Categorize  </span> </NuxtLink> - <NuxtLink to="/blog/cat"> <span class="text-white"> Search  </span> </NuxtLink> </h5>
+		        <h6 class="text-white"> <NuxtLink to="/blog/cat"> <span class="text-white"> Categorize  </span> </NuxtLink> - <NuxtLink to="/blog/cat"> <span class="text-white"> Search  </span> </NuxtLink> </h6>
 		      </div>
 		    </div>
 		  </div>
