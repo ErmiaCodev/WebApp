@@ -29,6 +29,7 @@ class Post(models.Model):
 	body = models.TextField()
 	author = models.CharField(max_length=100)
 	publish = models.DateTimeField(auto_now_add=True)
+	cat = models.CharField(max_length=100, default=None)
 
 	def __str__(self):
 		return self.title

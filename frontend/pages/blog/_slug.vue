@@ -1,21 +1,25 @@
 <template>
-	<div class="container bg-white mt-3 p-4 rounded">
-		<div class="text-center mt-0 pb-2">
-          
-            
-			<div >
-				<img :src="post.thumbnail" alt="test" style="width: 100%" class="img-thumbnail img-responsive">
-				<h2 class="text-center mt-3 font-weight-bold"> {{post.title}} </h2>
-				
-				<hr class="badge-light">
-				<div class="text-left">
+	<div class="">
+		<header :style="part1 + post.thumbnail + part2">
+		  <div class="container h-100">
+		    <div class="row h-100 align-items-center">
+		      <div class="col-12 text-center">
+		        <h1 class="title font-weight-light text-white mb-2">{{post.title}} </h1>
+		        <h5 class="text-white"> {{post.description}} </h5>
+		      </div>
+		    </div>
+		  </div>
+		</header>	
+		<div class="container">
+			<div class="bg-white p-3 m-2">
+				<h2 class="text-center">
+					{{post.title}}
+				</h2>
+				<h5>
 					{{post.body}}
-				</div>
+				</h5>
 			</div>
-			
-
 		</div>
-      
 	</div>
 		
 </template>
@@ -26,9 +30,12 @@ import axios from 'axios'
 		data() {
 			return {
 				media: '/media/',
+				part1: "height: 100vh; min-height: 5; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('",
+				part2: "'); background-size: cover; background-position: center; background-repeat: no-repeat;",
 				post: {
 
-				}
+				},
+				test: '/media/ca.jpg'
 			}
 		},
 		created() {

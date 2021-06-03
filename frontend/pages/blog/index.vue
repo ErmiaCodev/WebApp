@@ -1,11 +1,18 @@
 <template>
-	<div class="container-fluid p-5 bg-white">
-		<div class="container">
-			<h1 class="text-center"> Blog </h1>
-
+	<div class="bg-white">
+		<header style="height: 100vh; min-height: 5; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/static/assets/img/home.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+		  <div class="container h-100">
+		    <div class="row h-100 align-items-center">
+		      <div class="col-12 text-center">
+		        <h1 class="title font-weight-light text-white mb-2"> Geeky Blog </h1>
+		        <h5 class="text-white"> <NuxtLink to="/blog/cat"> <span class="text-white"> Categorize  </span> </NuxtLink> - <NuxtLink to="/blog/cat"> <span class="text-white"> Search  </span> </NuxtLink> </h5>
+		      </div>
+		    </div>
+		  </div>
+		</header>
+		<div class="container mt-3">
+			<br>
 			<div>
-				<br>
-
 				<div v-for="post in posts">
 					<NuxtLink :to="/blog/ + post.slug" class="text-info">
 						<h2> {{post.title}} </h2>
@@ -30,10 +37,9 @@ import axios from 'axios'
 				posts: null
 			}
 		},
-		created() {
-			axios
-				.get('/api/posts/')
-				.then(response => {this.posts = response.data.posts})
+		mounted() {
+			axios.get('/api/posts')
+				.then(response => this.posts = response.data.posts)
 		}
 	};
 </script>
