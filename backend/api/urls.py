@@ -5,5 +5,6 @@ urlpatterns = [
 	path('register/', register),
 	path('getuser/', getuser),
 	path('posts/', getposts),
-	path('post/<slug>', post)
+	path('post/<slug>', post),
+	path('edituser/', edit)
 ]

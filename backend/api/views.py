@@ -90,3 +90,23 @@ def post(request, slug):
 	}
 
 	return JsonResponse(context)
+
+@csrf_exempt
+def edit(request):
+	token = json.loads(request.body).get('token')
+	name = json.loads(request.body).get('name')
+	lname = json.loads(request.body).get('lname')
+	email = json.loads(request.body).get('email')
+	avatar = json.loads(request.body).get('avatar')
+
+	user = Token.objects.get(token=token)
+
+	UserProf = Profile.objects.get(username=user.username)
+	UserProf.name = str(name)
+	UserProf.lastname = str(lname)
+	UserProf.email = str(email)
+	UserProf.avatar = str(avatar)
+	UserProf.save()
+	
+
+	return JsonResponse({'status': 200})
