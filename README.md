@@ -63,3 +63,11 @@ Ngin
 * $ sudo cp WebApp.sample /etc/nginx/site-available/WebApp # Or every name u wanna name it
 * $ sudo nano /etc/nginx/site-available/WebApp # Complete That With UR infos such as static/media dir
 #### WllDown Finished
+
+## Read These Wikis
+1. [Nginx](https://nginx.org/)
+2. [Django](https://www.djangoproject.com/)
+3. [Gunicorn](https://gunicorn.org/)
+4. [Nodejs](https://nodejs.org/)
+5. [Yarn](https://yarnpkg.com/)
+6. [PM2](https://pm2.keymetrics.io/)
