@@ -31,5 +31,5 @@ if INP[0] == 'run'
 end
 
 if INP[0] == 'help'
-	puts "Usage:\n\t-> push git push, commit and add all\n\t-> run start Development Server (Debug)\n\t-> start run Deployment Server Only Smoke Test\n!! Real Server In Repo Wiki"
+	puts "Usage:\n\t-> push git push, commit and add all\n\t-> run start Development Server (Debug)\n\t-> start run Deployment Server Only Smoke Test\n\n!! Real Server In Repo Wiki"
 end
