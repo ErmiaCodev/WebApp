@@ -85,7 +85,8 @@ def post(request, slug):
 			'title': data.title,
 			'thumbnail': data.thumbnail.url,
 			'description': data.description,
-			'body': data.body
+			'body': data.body,
+			'author': data.author
 		}
 	}
 
