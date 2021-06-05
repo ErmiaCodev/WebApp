@@ -15,10 +15,11 @@ if INP[0] == 'push'
 end
 
 if INP[0] == 'start'
-	cmd1 = 'cd backend && nohup ./manage.py runserver &'
-	cmd2 = 'pm2 start GeekyChunk'
-	system(cmd1)
-	system(cmd2)
+	#cmd1 = 'cd backend && nohup ./manage.py runserver &'
+	#cmd2 = 'pm2 start GeekyChunk'
+	#system(cmd1)
+	#system(cmd2)
+	puts "Coming Soon"
 end
 
 if INP[0] == 'run'
@@ -27,4 +28,8 @@ if INP[0] == 'run'
 	cmd2 = 'cd frontend && yarn dev &'
 	system(cmd1)
 	system(cmd2)
+end
+
+if INP[0] == 'help'
+	puts "Usage:\n\t-> push git push, commit and add all\n\t-> run start Development Server (Debug)\n\t-> start run Deployment Server Only Smoke Test\n!! Real Server In Repo Wiki"
 end
