@@ -29,11 +29,11 @@ Using MP2 For Nuxt Deployment sample Conf In FrontEnd Directory
 
 ### Rb Manager Tutorial
 
-##### Setup
+#### Setup
 Coming Sooon
-##### Developing Server
+#### Developing Server
 ./manage.rb run
-##### Deploying Smoke Test
+#### Deploying Smoke Test
 ./manage.rb start
 
 ### Requirments
