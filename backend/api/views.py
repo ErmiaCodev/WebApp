@@ -111,3 +111,13 @@ def edit(request):
 	
 
 	return JsonResponse({'status': 200})
+
+def getuserid(request, id):
+	data = Profile.objects.get(username=id)
+	context = {
+		'username': data.username,
+		'name': data.name,
+		'lname': data.lastname,
+		'avatar': data.avatar
+	}
+	return JsonResponse(context)
