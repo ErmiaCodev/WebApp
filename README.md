@@ -73,3 +73,5 @@ Ngin
 6. [PM2](https://pm2.keymetrics.io/)
 7. [Nuxt](https://nuxtjs.org/)
 8. [Vue](https://vuejs.org/)
+9. [Bootstrap](https://getbootstrap.com)
+10. [Axios](https://github.com/axios/axios)
