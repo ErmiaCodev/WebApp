@@ -1,0 +1,75 @@
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 05, 2021 - 07:22:39
+Django version 3.2.4, using settings 'backend.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[05/Jun/2021 07:23:15] "GET /api/admin/ HTTP/1.0" 302 0
+[05/Jun/2021 07:23:17] "GET /api/admin/login/?next=/api/admin/ HTTP/1.0" 200 2230
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 05, 2021 - 07:50:51
+Django version 3.2.4, using settings 'backend.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[05/Jun/2021 07:50:51] "GET /api/admin/ HTTP/1.0" 302 0
+[05/Jun/2021 07:50:52] "GET /api/admin/login/?next=/api/admin/ HTTP/1.0" 200 2230
+[05/Jun/2021 07:51:02] "GET /api/admin/login/?next=/api/admin/ HTTP/1.0" 200 2230
+[05/Jun/2021 07:51:05] "POST /api/admin/login/?next=/api/admin/ HTTP/1.0" 200 2391
+[05/Jun/2021 07:51:10] "POST /api/admin/login/?next=/api/admin/ HTTP/1.0" 302 0
+[05/Jun/2021 07:51:10] "GET /api/admin/ HTTP/1.0" 200 5446
+[05/Jun/2021 07:51:14] "GET /api/admin/api/post/ HTTP/1.0" 200 5529
+[05/Jun/2021 07:51:14] "GET /api/admin/jsi18n/ HTTP/1.0" 200 3195
+[05/Jun/2021 07:51:16] "GET /api/admin/api/post/add/ HTTP/1.0" 200 9146
+[05/Jun/2021 07:51:17] "GET /api/admin/jsi18n/ HTTP/1.0" 200 3195
+[05/Jun/2021 07:51:46] "POST /api/admin/api/post/add/ HTTP/1.0" 302 0
+[05/Jun/2021 07:51:46] "GET /api/admin/api/post/ HTTP/1.0" 200 6875
+[05/Jun/2021 07:51:46] "GET /api/admin/jsi18n/ HTTP/1.0" 200 3195
+[05/Jun/2021 07:51:53] "GET /api/posts/ HTTP/1.0" 200 249
+[05/Jun/2021 07:51:54] "GET /api/posts/ HTTP/1.0" 200 249
+[05/Jun/2021 07:52:01] "GET /api/post/lorem-ipsum HTTP/1.0" 200 144
+[05/Jun/2021 07:52:23] "GET /api/admin/api/post/ HTTP/1.0" 200 6675
+[05/Jun/2021 07:52:23] "GET /api/admin/jsi18n/ HTTP/1.0" 200 3195
+[05/Jun/2021 07:52:26] "GET /api/post/lorem-ipsum HTTP/1.0" 200 144
+[05/Jun/2021 07:52:41] "GET /api/post/lorem-ipsum HTTP/1.0" 200 144
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 05, 2021 - 07:58:56
+Django version 3.2.4, using settings 'backend.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[05/Jun/2021 07:58:57] "GET /api/admin/api/post/ HTTP/1.0" 200 6675
+[05/Jun/2021 07:58:57] "GET /api/admin/jsi18n/ HTTP/1.0" 200 3195
+[05/Jun/2021 07:58:57] "GET /api/admin/api/post/ HTTP/1.0" 200 6675
+[05/Jun/2021 07:58:57] "GET /api/admin/jsi18n/ HTTP/1.0" 200 3195
+[05/Jun/2021 07:59:00] "POST /api/login/ HTTP/1.0" 200 229
+[05/Jun/2021 07:59:00] "POST /api/getuser/ HTTP/1.0" 200 118
+[05/Jun/2021 07:59:03] "POST /api/edituser/ HTTP/1.0" 200 15
+[05/Jun/2021 07:59:04] "POST /api/getuser/ HTTP/1.0" 200 119
+[05/Jun/2021 07:59:08] "POST /api/edituser/ HTTP/1.0" 200 15
+[05/Jun/2021 07:59:10] "POST /api/getuser/ HTTP/1.0" 200 118
+[05/Jun/2021 07:59:15] "GET /api/posts/ HTTP/1.0" 200 249
+[05/Jun/2021 07:59:16] "GET /api/posts/ HTTP/1.0" 200 249
+[05/Jun/2021 07:59:23] "GET /api/post/lorem-ipsum HTTP/1.0" 200 144
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 05, 2021 - 08:05:04
+Django version 3.2.4, using settings 'backend.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[05/Jun/2021 08:05:45] "POST /api/login/ HTTP/1.0" 200 229
+[05/Jun/2021 08:05:46] "POST /api/getuser/ HTTP/1.0" 200 118
+[05/Jun/2021 08:06:02] "POST /api/getuser/ HTTP/1.0" 200 118
+[05/Jun/2021 08:06:07] "GET /api/posts/ HTTP/1.0" 200 249
+[05/Jun/2021 08:06:08] "GET /api/posts/ HTTP/1.0" 200 249
+[05/Jun/2021 08:06:11] "GET /api/posts/ HTTP/1.0" 200 249
+[05/Jun/2021 08:06:13] "GET /api/posts/ HTTP/1.0" 200 249
+[05/Jun/2021 08:12:18] "GET /api/posts/ HTTP/1.0" 200 249

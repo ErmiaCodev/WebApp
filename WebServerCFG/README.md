@@ -6,10 +6,10 @@
 
 ### Target: Ubuntu(Deb)
 
--> Django Proxy Pass
+-> 8000 (Django) Proxy Pass
 
--> Node(Yarn) Proxy Pass
+-> 3000 (Node) Proxy Pass
 
--> /Static DIR
+-> <ProjectPath>/Static DIR Serve
 
--> /Media DIR
+-> <ProjectPath>/Media DIR Serve
