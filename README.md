@@ -71,3 +71,5 @@ Ngin
 4. [Nodejs](https://nodejs.org/)
 5. [Yarn](https://yarnpkg.com/)
 6. [PM2](https://pm2.keymetrics.io/)
+7. [Nuxt](https://nuxtjs.org/)
+8. [Vue](https://vuejs.org/)
