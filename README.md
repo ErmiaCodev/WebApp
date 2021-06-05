@@ -65,7 +65,7 @@ Ngin
 #### WllDown Finished
 
 ## Read These Wikis
-1. [Nginx](https://nginx.org/)
+1. [Nginx](https://nginx.com/)
 2. [Django](https://www.djangoproject.com/)
 3. [Gunicorn](https://gunicorn.org/)
 4. [Nodejs](https://nodejs.org/)
