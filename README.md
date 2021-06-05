@@ -14,9 +14,10 @@ It include CMS(For Making Blog),\
 ## Deploying:
 #### Using Nginx As WebServer WIth The Confs
 [NGINX](https://github.com/GeekyChunk/WebApp/tree/main/WebServerCFG)
+#
 Using Gunicorn For Django Deamen
+#
 Using MP2 For Nuxt Deployment sample Conf In FrontEnd Directory
-##### For The First We Just Make Demo Design But After Confirm We Start Making Feature Like Auth System And CMS!!
 
 ### TODO: 
 
