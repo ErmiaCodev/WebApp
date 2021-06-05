@@ -60,6 +60,6 @@ Ngin
 * $ pm2 stop [AppName]
 * $ cd ..
 * $ cd WebServerCFG
-*  # cp WebApp.sample /etc/nginx/site-available/WebApp # Or every name u wanna name it
-*  # nano /etc/nginx/site-available/WebApp # Complete That With UR infos such as static/media dir
+* $ sudo cp WebApp.sample /etc/nginx/site-available/WebApp # Or every name u wanna name it
+* $ sudo nano /etc/nginx/site-available/WebApp # Complete That With UR infos such as static/media dir
 #### WllDown Finished
