@@ -10,6 +10,6 @@
 
 -> 3000 (Node) Proxy Pass
 
--> <ProjectPath>/Static DIR Serve
+-> ~ProjectPath/Static DIR Serve
 
--> <ProjectPath>/Media DIR Serve
+-> ~ProjectPath/Media DIR Serve
