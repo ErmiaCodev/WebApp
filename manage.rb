@@ -28,8 +28,11 @@ if INP[0] == 'smoke'
 	cmd2 = 'cd frontend && yarn dev'
 	system(cmd1)
 	system(cmd2)
+	"!!! Running In Silent NohUp (Kill by PID To stop)!!!"
 end
 
 if INP[0] == 'help'
 	puts "Usage:\n\t-> push git push, commit and add all\n\t-> smoke start Development Server (Smoke Test)\n\t-> start run Deployment Server Only Smoke Test\n\n!! Deploy Tutorial In Repo Wiki"
 end
+
+cmds = ['start', 'smoke', 'push', 'status']
